@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#128532;&#128532;&#128532;&#128532;&#128532;&#128532;&#128532;&#128532;&#128532;&#128532;</title>
+</head>
+<body>
+    <script>
+        function galitAko(){
+            try{
+                let run = true;
+                while(run){
+                    let input = prompt("Galit ka ba?");
+
+                    if(input.toLowerCase() == "yes" || input.toLowerCase() == "oo") {
+                        run = false;
+                        for(let x=0; x<10000; x++){
+                            document.write("Sorry po &#128531;");
+                        }
+                    }else if(input.toLowerCase() == "no" || input.toLowerCase() == "hindi") {
+                        run = false;
+                        for(let y=0; y<10000; y++){
+                            document.write("Oki po &#x1F601;");
+                        }
+                    }else{
+                        throw err;
+                    }
+                }
+            }catch(err){
+                galitAko();
+            }
+        }
+        galitAko();
+    </script>
+</body>
+</html>
